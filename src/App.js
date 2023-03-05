@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstComponent from './FirstComponent';
+import Tick from './Tick';
 
 function App() {
+  const value = 'this is me';
+  const arr =['dhaka','tangail','rajshahi','dinajpur'];
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>hi {value} trveling to {arr.join(', ') } of bangladesh</h1>
+      <Tick />
+      <FirstComponent name="tapash" />
+      <FirstComponent name="paull" />
+
+      <FirstComponent name="react" />
+      <FirstComponent name="joss" />
+
+
     </div>
   );
 }
