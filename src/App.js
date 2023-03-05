@@ -15,8 +15,6 @@ function App() {
 
       <FirstComponent name="react" />
       <FirstComponent name="joss" />
-
-
     </div>
   );
 }
