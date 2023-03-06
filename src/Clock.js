@@ -1,8 +1,10 @@
 import React from "react";
 import Form from "./Form";
+import Tick from "./Tick";
+// import Reservation from "./Reservation";
 // import LoginControl from "./LoginController";
 // import Numberlist from "./NumberList";
-import Tick from "./Tick";
+// import Tick from "./Tick";
 // import Toggle from "./Toggle";
 // import Blog from "./Blog";
 
@@ -20,32 +22,29 @@ class Clock extends React.Component{
     }
 
 
-    // componentDidMount(){
-    //     this.timerId = setInterval(()=> this.tick(),1000);
-    // }
+    componentDidMount(){
+        this.timerId = setInterval(()=> this.tick(),1000);
+    }
 
-    // componentWillUnmount(){
-    //     clearInterval(this.timerId);
-    // }
+    componentWillUnmount(){
+        clearInterval(this.timerId);
+    }
 
-    // tick(){
-    //     this.setState({
-    //         date: new Date()
-    //     })
-    // }
+    tick(){
+        this.setState({
+            date: new Date()
+        })
+    }
 
     render(h) {
         return(
             <div className="cock">
                 <h1>Hi</h1>
-                <h2>this is me { this.state.date.toLocaleDateString()}</h2>
+                <h2>this is my time zone { this.state.date.toLocaleTimeString()}</h2>
                 <Tick />
                 <Form />
-                {/* <Toggle />
-                <LoginControl />
-                <Numberlist numbers={numbers} />
 
-                <Blog posts={posts}/> */}
+                
             </div>
         );
     }

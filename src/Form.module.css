@@ -1,4 +1,4 @@
-.form{
+.login{
     background: rgba(0, 128, 0, 0.521);
     padding: 10%;
     margin: 10%;
@@ -7,7 +7,8 @@
 h1{
     font-size: 2rem;
     font-weight: 600;
-    color: red;
+    color: rgb(5, 5, 5);
+    text-align: center;
 }
 label{
     width: 100%;
@@ -20,13 +21,14 @@ input{
     height: 30px;
     padding: 10px;
     border-radius: 10px;
-
+    margin: 5px;
 }
 textarea{
     width: 100%;
     height: 100px;
     padding: 10px;
     border-radius: 10px;
+    margin: 5px;
 }
 .btn{
     width: 100px;
